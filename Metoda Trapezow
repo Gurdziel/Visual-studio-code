@@ -1,0 +1,14 @@
+def f(x):
+    return x**2-3*x+4
+
+def metodatrapezow(p,q,n):
+    dl = (q-p)/n
+    s = f(p) + f(q)
+    for i in range(1,n):
+        s += f(p + i*dl)*2 
+    return s * dl/2
+
+print(metodatrapezow(1,9,4))
+print(metodatrapezow(1,9,40))  
+print(metodatrapezow(1,9,400))  
+print(metodatrapezow(1,9,400000))
