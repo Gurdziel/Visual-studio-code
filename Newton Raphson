@@ -1,0 +1,10 @@
+def newton_raphson(p, E):
+    a = p 
+    b = 1
+    while a-b > E:
+        a = (a+b)/2
+        b = p/a
+        print(a, '\t\t', b)
+    return a 
+
+print(newton_raphson(50000,0.001))
