@@ -1,0 +1,11 @@
+#listy podstawy
+
+liczby = [9,2,3,4,5,6,7,8,1,10]     #lista
+liczby.append(100)  #dodaje
+liczby.insert(2,1)  #wstawia dana liczbe w dane miejsce
+liczby.pop(5)   #usuwa
+liczby.sort(reverse=True)   #sortuje liczby
+print(liczby)   #wypisuje
+
+liczby.remove(5) - usuwa liczbe
+print(len(liczby)) - Wypisuje ilosc liczb w liscie 
