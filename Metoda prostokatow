@@ -1,0 +1,16 @@
+def f(x):
+    return x**2-2*x+5
+
+
+def metodaProstokatow(p,q,n):
+    dl = (q-p)/n
+    s = 0
+    for i in range(n):
+        s += f(p + i*dl + dl/2)
+    return s * dl
+
+
+print(metodaProstokatow(2,10,4))
+print(metodaProstokatow(2,10,40))  
+print(metodaProstokatow(2,10,400))  
+print(metodaProstokatow(2,10,400000))
